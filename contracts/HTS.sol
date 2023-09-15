@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract HappyTribe is ERC20, ERC20Burnable, Ownable {
     constructor(address owner) ERC20("HappyTribe", "HTS") {
         transferOwnership(owner);
-        _mint(owner, 100 * 10 ** decimals());
+        _mint(owner, 100000000 * 10 ** decimals());
     }
 
     function mint(address to, uint256 amount) public onlyOwner {
